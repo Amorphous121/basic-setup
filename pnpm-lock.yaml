@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  connect-ensure-login: ^0.1.1
   connect-mongo: ^4.6.0
   cookie-parser: ^1.4.6
   cors: ^2.8.5
@@ -20,6 +21,7 @@ specifiers:
   prettier: ^2.8.3
 
 dependencies:
+  connect-ensure-login: 0.1.1
   connect-mongo: 4.6.0_express-session@1.17.3
   cookie-parser: 1.4.6
   cors: 2.8.5
@@ -1100,6 +1102,11 @@ packages:
   /concat-map/0.0.1:
     resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
     dev: true
+
+  /connect-ensure-login/0.1.1:
+    resolution: {integrity: sha512-u0LGY/YXgkqdD4uVz8Gkri0adby5SBPYIFQvIa4FjBIaZUN0yuZPVHsjAA2bUiprGyjh8NlqxPUcIzzfTiXhQQ==}
+    engines: {node: '>= 0.4.0'}
+    dev: false
 
   /connect-mongo/4.6.0_express-session@1.17.3:
     resolution: {integrity: sha512-8new4Z7NLP3CGP65Aw6ls3xDBeKVvHRSh39CXuDZTQsvpeeU9oNMzfFgvqmHqZ6gWpxIl663RyoVEmCAGf1yOg==}

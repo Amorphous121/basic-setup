@@ -1,6 +1,6 @@
 const { Router } = require('express');
-const passport = require('passport');
-const { checkSession } = require('../middlewares/session-checker.middleware');
+const { ensureLoggedIn } = require('connect-ensure-login');
+
 const { AuthRouter } = require('./auth.route');
 
 const IndexRouter = Router();
@@ -8,7 +8,8 @@ const IndexRouter = Router();
 IndexRouter.use('/auth', AuthRouter);
 
 // Testing route
-IndexRouter.get('/users', checkSession, (req, res) => { 
+IndexRouter.get('/users', ensureLoggedIn({ redirectTo: '/api/auth/login' }), (req, res) => { 
+  console.log("requst user =======> ", req.user)
   res.send(['prathamesh', 'mayur'])
 });
 

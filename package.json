@@ -5,12 +5,17 @@
   "main": "index.js",
   "scripts": {
     "start": "cross-env NODE_ENV=production node src/app.js",
-    "dev": "cross-env NODE_ENV=development nodemon src/app.js"
+    "dev": "cross-env NODE_ENV=development nodemon src/app.js",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "src/**/*.js": "prettier --write"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "connect-ensure-login": "^0.1.1",
     "connect-mongo": "^4.6.0",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
