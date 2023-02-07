@@ -25,7 +25,7 @@ app.use(
 		store: MongoStore.create({ mongoUrl: `mongodb://localhost:27017/discord-auth-v2` }),
 		cookie: {
 			maxAge: 36000000,
-			secure: false
+			secure: false,
 		},
 	})
 );

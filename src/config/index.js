@@ -18,5 +18,5 @@ module.exports = {
 	COOKIE_SECRET: str(),
 	DB_URI: str(),
 	DATABASE_NAME: str(),
-	CALLBACK_URL: str({ default: 'http://localhost:8080/api/auth/discord/redirect' })
+	CALLBACK_URL: str({ default: "http://localhost:8080/api/auth/discord/redirect" }),
 });
